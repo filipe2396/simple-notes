@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>SimpleNotes</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <title>Simple Notes</title>
 
-  <body>
-    <%= yield %>
-  </body>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= javascript_pack_tag 'application', defer: true %>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
