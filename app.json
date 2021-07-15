@@ -1,0 +1,6 @@
+{
+  "name": "Simple Notes",
+  "scripts": {
+    "postdeploy": "bin/rails db:schema:load db:seed"
+  }
+}
