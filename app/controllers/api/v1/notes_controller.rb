@@ -2,7 +2,7 @@ class Api::V1::NotesController < Api::BaseController
   before_action :set_note, only: %i[show destroy]
 
   def index
-    notes = Note.all
+    notes = Note.all.order(created_at: :desc)
     render_response(notes)
   end
 
